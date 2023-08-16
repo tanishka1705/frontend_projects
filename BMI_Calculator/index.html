@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js" defer></script>
+    <title>BMI Calculator</title>
+
+<style>
+    .calc{
+        margin-left: 40%;
+        margin-top: 10%;
+    }
+
+    input{
+        padding: 4px;
+        width: 25%;
+    }
+    
+    #btn{
+        border-radius: 2px;
+        padding: 10px;
+        margin-left: 60px;
+        border: 1px solid;
+        background-color: rgb(73, 153, 73);
+        color:aliceblue
+    }
+    #res{
+        color:green;
+    }
+
+</style>
+
+</head>
+<body>
+    <div class="calc">
+        <h1>Check Your BMI</h1>
+        <p>Enter your weight and height to check your BMI results</p>
+        
+        <h3>Put your weight in here (KG)</h3>
+        <input type="number" id="wght">
+       
+        <h3>Put your height in here (CM)</h3>
+        <input type="number" id="hght">
+
+        <div style="margin-top: 15px;">
+            <button id="btn" onclick="calculateBMI()">Calculate BMI</button>
+        </div>
+        
+        <div style="margin-top: 15px;">Your BMI is <span id="res"></span> which means You are <span id="msg"></span></div>
+    </div>
+  
+</body>
+</html>
